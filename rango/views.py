@@ -181,7 +181,7 @@ def user_login(request):
 
 @login_required
 def restricted(request):
-    return HttpResponse(request, 'rango/restricted.html')
+    return render(request, 'rango/restricted.html')
 
 
 @login_required
